@@ -9,6 +9,16 @@ if(NOT TARGET Cinder-Bullet3D)
     file(GLOB SOURCE_LIST CONFIGURE_DEPENDS
             "${Cinder-Bullet3D_PROJECT_ROOT}/src/Cinder-Bullet3D/RigidBody.cpp"
             "${Cinder-Bullet3D_PROJECT_ROOT}/src/Cinder-Bullet3D/BulletContext.cpp"
+            "${Cinder-Notifications_PROJECT_ROOT}/src/**/*.h"
+            "${Cinder-Notifications_PROJECT_ROOT}/src/**/*.hpp"
+            "${Cinder-Notifications_PROJECT_ROOT}/src/**/*.cc"
+            "${Cinder-Notifications_PROJECT_ROOT}/src/**/*.cpp"
+            "${Cinder-Notifications_PROJECT_ROOT}/src/**/*.c"
+            "${Cinder-Notifications_PROJECT_ROOT}/src/*.h"
+            "${Cinder-Notifications_PROJECT_ROOT}/src/*.hpp"
+            "${Cinder-Notifications_PROJECT_ROOT}/src/*.cc"
+            "${Cinder-Notifications_PROJECT_ROOT}/src/*.cpp"
+            "${Cinder-Notifications_PROJECT_ROOT}/src/*.c"
             )
 
     # Create the library!
