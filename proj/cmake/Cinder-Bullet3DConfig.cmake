@@ -1,5 +1,5 @@
 if(NOT TARGET Cinder-Bullet3D)
-    # Define ${Cinder-Notifications_PROJECT_ROOT}. ${CMAKE_CURRENT_LIST_DIR} is just the current directory.
+    # Define ${Cinder-Bullet3D_PROJECT_ROOT}. ${CMAKE_CURRENT_LIST_DIR} is just the current directory.
     get_filename_component(Cinder-Bullet3D_PROJECT_ROOT "${CMAKE_CURRENT_LIST_DIR}/../.." ABSOLUTE)
 
     # Define ${CINDER_PATH} as usual.
@@ -24,7 +24,7 @@ if(NOT TARGET Cinder-Bullet3D)
     # If your Cinder block has no source code but instead pre-build libraries,
     # you can specify all of them here (uncomment the below line and adjust to your needs).
     # Make sure to use the libraries for the right platform.
-    # # target_link_libraries(Cinder-Notifications "${Cinder-OpenCV_PROJECT_ROOT}/lib/libopencv_core.a")
+    # # target_link_libraries(Cinder-Bullet3D "${Cinder-OpenCV_PROJECT_ROOT}/lib/libopencv_core.a")
 
     if(NOT TARGET cinder)
         include("${CINDER_PATH}/proj/cmake/configure.cmake")
