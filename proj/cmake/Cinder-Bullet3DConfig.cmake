@@ -7,8 +7,6 @@ if(NOT TARGET Cinder-Bullet3D)
 
     # Make a list of source files and define that to be ${SOURCE_LIST}.
     file(GLOB SOURCE_LIST CONFIGURE_DEPENDS
-            "${Cinder-Bullet3D_PROJECT_ROOT}/src/Cinder-Bullet3D/RigidBody.cpp"
-            "${Cinder-Bullet3D_PROJECT_ROOT}/src/Cinder-Bullet3D/BulletContext.cpp"
             "${Cinder-Bullet3D_PROJECT_ROOT}/src/**/*.h"
             "${Cinder-Bullet3D_PROJECT_ROOT}/src/**/*.hpp"
             "${Cinder-Bullet3D_PROJECT_ROOT}/src/**/*.cc"
@@ -28,6 +26,8 @@ if(NOT TARGET Cinder-Bullet3D)
     # Notice that `cinderblock.xml` has `<includePath>src</includePath>`.
     # So you need to set `../../src/` to include.
     target_include_directories(Cinder-Bullet3D PUBLIC "${Cinder-Bullet3D_PROJECT_ROOT}/src" )
+   # target_include_directories(Cinder-Bullet3D PUBLIC "${Cinder-Bullet3D_PROJECT_ROOT}/src/BulletPhysics" )
+    #target_include_directories(Cinder-Bullet3D PUBLIC "${Cinder-Bullet3D_PROJECT_ROOT}/src/Cinder-Bullet3D" )
     target_include_directories(Cinder-Bullet3D SYSTEM BEFORE PUBLIC "${CINDER_PATH}/include" )
 
 
