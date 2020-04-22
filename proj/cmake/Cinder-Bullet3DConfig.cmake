@@ -26,8 +26,8 @@ if(NOT TARGET Cinder-Bullet3D)
     # Notice that `cinderblock.xml` has `<includePath>src</includePath>`.
     # So you need to set `../../src/` to include.
     target_include_directories(Cinder-Bullet3D PUBLIC "${Cinder-Bullet3D_PROJECT_ROOT}/src" )
-   # target_include_directories(Cinder-Bullet3D PUBLIC "${Cinder-Bullet3D_PROJECT_ROOT}/src/BulletPhysics" )
-    #target_include_directories(Cinder-Bullet3D PUBLIC "${Cinder-Bullet3D_PROJECT_ROOT}/src/Cinder-Bullet3D" )
+    target_include_directories(Cinder-Bullet3D PUBLIC "${Cinder-Bullet3D_PROJECT_ROOT}/src/BulletPhysics" )
+    target_include_directories(Cinder-Bullet3D PUBLIC "${Cinder-Bullet3D_PROJECT_ROOT}/src/Cinder-Bullet3D" )
     target_include_directories(Cinder-Bullet3D SYSTEM BEFORE PUBLIC "${CINDER_PATH}/include" )
 
 
